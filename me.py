@@ -1,7 +1,7 @@
 def binToDec(number):
     dec = 0
     leng = len(str(number))
-    n = str(number)
+    n = str(number)[::-1]
     for i in range(leng):
         dec += (int(n[i]) * (2**i))
         
