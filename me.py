@@ -18,13 +18,14 @@ def decToBin(number):
         else:
             binary.append(number % 2)
             quot = 0
-    # print (quot, number)
-    return binary.reverse()
+    binary.reverse()
+    b = ' '.join(map(str, binary))
+    return b
 
 def Main():
     print("Begin:")
-    print(binToDec(100000))
-    print(decToBin(32))
+    print(binToDec(10000010))
+    print(decToBin(130))
     print("End:")
 
 if __name__ == '__main__':
