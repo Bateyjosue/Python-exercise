@@ -23,10 +23,15 @@ def decToBin(number):
     return b
 
 def Main():
-    print("Begin:")
-    print(binToDec(10000010))
-    print(decToBin(130))
-    print("End:")
+    print("Begin:\n")
+    op = input("Which Operation do you wanna perform? \n1. Bin to Dec\n2. Dec to Bin\n>> ")
+    if(op == '1'):
+        number = int(input("Enter a Binary number: "))
+        print(binToDec(number))
+    elif (op == '2'):
+        number = int(input("Enter a Decimal number: "))
+        print(decToBin(number))
+    print("\nEnd:")
 
 if __name__ == '__main__':
     Main()
