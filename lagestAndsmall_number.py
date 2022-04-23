@@ -15,6 +15,7 @@ def smallestNumber(num):
 def Main():
     print(f'Large: {largestNumber([3, 41, 12, 9, 74, 15])}')
     print(f'Small: {smallestNumber([3, 41, 12, 9, 74, 15])}')
+    print(sys.argv[1])
 
 if __name__ == '__main__':
     Main()
